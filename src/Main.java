@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -96,7 +98,16 @@ public class Main {
 
     public static void task4() {
         System.out.println("Задача 4");
+        int[] numbers = {1, 2, 3, 4, 5};
 
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] % 2 != 0) {
+                // если число нечетное, добавляем к нему 1
+                numbers[i] += 1;
+            }
+        }
+
+        System.out.println(Arrays.toString(numbers));
     }
 
 }
